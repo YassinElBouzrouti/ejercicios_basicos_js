@@ -3,7 +3,8 @@ const alien = {
     species: 'Xenomorph XX121',
     origin: 'Unknown',
     weight: 180
-};
-
-    console.log("La propiedad weight tiene cómo valor:", alien.weight );
+};for (const key in alien) {
+    console.log("La propiedad", key, "tiene cómo valor:", alien[key] );
     
+}
+   

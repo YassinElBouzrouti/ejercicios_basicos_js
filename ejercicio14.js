@@ -14,14 +14,14 @@ const words = [
   ];
   function repeatCounter(list) {
     repeatCounter=1
+    i=0
     let newList=[]
-    for (element of list){
-        
-        
-  
+    list.forEach(element => {
+      repeatCounter++
+    });
+    
   
 }
-console.log(newList);
-  } 
+console.log(newList); 
 
 repeatCounter(words)
