@@ -9,18 +9,17 @@ const foodSchedule = [
   { name: "Pasta", isVegan: true },
 ];
 let veganSchedule=[]
-
+let i=0
 for(food of foodSchedule){
-    if(food.isVegan==true){
-        veganSchedule.push(food.name)
+    if(food.isVegan){
+        veganSchedule.push(food)
     }else{
-        for(fruit of fruits){
-            if(!veganSchedule.includes(fruit)){
-                veganSchedule.push(fruit)
-            }
-        }
+        veganSchedule.push({
+            name:fruits[i],
+            isVegan:true,
+        })
+        i++
     }
 }
-
 console.log(veganSchedule);
 
