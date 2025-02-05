@@ -13,15 +13,16 @@ const words = [
     'code',
   ];
   function repeatCounter(list) {
-    repeatCounter=1
-    i=0
-    let newList=[]
-    list.forEach(element => {
-      repeatCounter++
-    });
-    
+    wordCount={}
+    for(word of words){
+      if(!wordCount[word]){
+        wordCount[word]=0
+      }
+      wordCount[word]++
+    }
+  console.log(wordCount);
   
 }
-console.log(newList); 
+
 
 repeatCounter(words)
